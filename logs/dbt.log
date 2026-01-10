@@ -118,3 +118,41 @@ Runtime Error
 [0m03:39:30.656702 [debug] [MainThread]: Command `dbt seed` failed at 03:39:30.656605 after 0.06 seconds
 [0m03:39:30.657189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ca2485b4910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ca246ab99d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ca246a79460>]}
 [0m03:39:30.657674 [debug] [MainThread]: Flushing usage events
+[0m11:00:56.187507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44bcc28b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44b541dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44a805c40>]}
+
+
+============================== 11:00:56.197384 | 7c36299a-ffab-440f-9e28-d222f4dc6c61 ==============================
+[0m11:00:56.197384 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:00:56.198389 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '.', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:00:56.205717 [info ] [MainThread]: dbt version: 1.8.7
+[0m11:00:56.206271 [info ] [MainThread]: python version: 3.8.18
+[0m11:00:56.206685 [info ] [MainThread]: python path: /home/taivo/Seminar/.venv/bin/python3
+[0m11:00:56.207124 [info ] [MainThread]: os info: Linux-6.8.0-90-generic-x86_64-with-glibc2.34
+[0m11:00:56.207553 [info ] [MainThread]: Using profiles dir at .
+[0m11:00:56.207954 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m11:00:56.208364 [info ] [MainThread]: Using dbt_project.yml file at /home/taivo/Seminar/dbt_project.yml
+[0m11:00:56.208769 [info ] [MainThread]: Configuration:
+[0m11:00:56.209209 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m11:00:56.209605 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:00:56.209993 [info ] [MainThread]: Required dependencies:
+[0m11:00:56.210423 [debug] [MainThread]: Executing "git --help"
+[0m11:00:56.216306 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:00:56.217221 [debug] [MainThread]: STDERR: "b''"
+[0m11:00:56.217967 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:00:56.218535 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:00:56.219185 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:00:56.219996 [info ] [MainThread]: dbt looked for a profiles.yml file in ./profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:00:56.220700 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/taivo/Seminar/dbt_project.yml> not found
+
+[0m11:00:56.221915 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.08432365, "process_user_time": 1.17072, "process_kernel_time": 0.08191, "process_mem_max_rss": "85156", "process_in_blocks": "48", "process_out_blocks": "24", "command_success": false}
+[0m11:00:56.222567 [debug] [MainThread]: Command `dbt debug` failed at 11:00:56.222439 after 0.09 seconds
+[0m11:00:56.223201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44bcc28b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44a177a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78f44bf7beb0>]}
+[0m11:00:56.223811 [debug] [MainThread]: Flushing usage events

@@ -4,8 +4,8 @@
 
 select
     playlist_id 
-    , title as playlist_title 
-    , description as playlist_desc 
+    , title 
+    , description 
     , published_at::timestamp AS "PUBLISHED_AT"
     , channel_id 
     , thumbnail_high AS "PLAYLIST_THUMBNAIL_URL"

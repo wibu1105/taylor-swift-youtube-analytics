@@ -22,5 +22,5 @@ select
   channel_id,
   "ITEM_COUNT",
   "PLAYLIST_THUMBNAIL_URL"
-from {{ ref('stg_playlists') }}
+from YOUTUBE_DB.YOUTUBE_DEV_SCHEMA.STG_PLAYLISTS
 {% endsnapshot %}

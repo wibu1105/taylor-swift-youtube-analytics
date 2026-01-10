@@ -6,7 +6,7 @@
     strategy='check',
     check_cols=[
       'VIDEO_TITLE',
-      'VIDEO_DESCRIPTION',
+      'VIDEO_DESC',
       'VIDEO_PUBLISHED_AT',
       'VIEW_COUNT',
       'LIKE_COUNT',
@@ -18,11 +18,11 @@
 select
   video_id,
   video_title,
-  video_description,
+  video_desc,
   video_published_at,
   view_count,
   like_count,
   comment_count,
   duration_seconds
-from {{ ref('stg_videos') }}
+from YOUTUBE_DB.YOUTUBE_DEV_SCHEMA.STG_VIDEOS
 {% endsnapshot %}

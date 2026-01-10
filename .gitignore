@@ -8,9 +8,44 @@ wheels/
 
 # Virtual environments
 .venv
+venv/
 
-# Env 
+# Environment files
 .env
+.env.local
+.env.production
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# Airflow
+airflow.db
+airflow.cfg
+webserver_config.py
 
 # Service Account
 xom-data-youtube-sa.json
+*.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Power BI temp files
+*.tmp

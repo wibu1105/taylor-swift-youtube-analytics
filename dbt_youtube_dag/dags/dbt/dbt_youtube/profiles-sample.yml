@@ -1,0 +1,23 @@
+dbt_youtube:
+  outputs:
+    dev:
+      account: ${env_var('SNOWFLAKE_ACCOUNT')}
+      password: ${env_var('SNOWFLAKE_PASSWORD')}
+      user: ${env_var('SNOWFLAKE_USER')}
+      database: YOUTUBE_ANALYTICS_DB
+      role: ACCOUNTADMIN
+      schema: ANALYTICS_DEV
+      warehouse: YOUTUBE_ANALYTICS_WH
+      threads: 1
+      type: snowflake     
+    prod:
+      account: ${env_var('SNOWFLAKE_ACCOUNT')}
+      password: ${env_var('SNOWFLAKE_PASSWORD')}
+      user: ${env_var('SNOWFLAKE_USER')}
+      database: YOUTUBE_ANALYTICS_DB
+      role: ACCOUNTADMIN
+      schema: ANALYTICS_PROD
+      warehouse: YOUTUBE_ANALYTICS_WH
+      threads: 1
+      type: snowflake      
+  target: dev

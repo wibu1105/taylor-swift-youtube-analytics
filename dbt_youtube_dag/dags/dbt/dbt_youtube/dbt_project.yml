@@ -37,3 +37,7 @@ models:
       +materialized: ephemeral
     gold:
       +materialized: table
+
+seeds:
+  dbt_youtube:
+    +strategy: delete+insert
